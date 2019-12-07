@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Number {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter an integer; ");
+		int a = input.nextInt();
+
+		int b = Math.abs(a);
+
+		if (a==b) {
+			int c = a>>3;
+			int d = a-(c<<3);
+			System.out.printf("\"The quotient of the absolute value of the input value divided by 8 is %d with a remainder of %d.\"",c,d);
+		}
+
+		else {
+			int c = b>>3;
+			int d = b-(c<<3);
+			System.out.printf("\"The quotient of the absolute value of the input value divided by 8 is %d with a remainder of %d.\"",c,d);
+		}
+	}
+}
